@@ -44,7 +44,8 @@ CREATE TABLE employee
     );
     
     
-** TenantOne Testing**
+**TenantOne Testing**
+```
   curl -X POST \
   http://localhost:8080/employees/create \
   -H 'cache-control: no-cache' \
@@ -66,9 +67,10 @@ CREATE TABLE employee
 	"ref_id":2,
 	"valid":0
   }'
+```
 
-
-** TenantTwo Testing**
+**TenantTwo Testing**
+```
   curl -X POST \
   http://localhost:8080/employees/create \
   -H 'cache-control: no-cache' \
@@ -90,3 +92,4 @@ CREATE TABLE employee
 	"ref_id":2,
 	"valid":0
   }'
+```
