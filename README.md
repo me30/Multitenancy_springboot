@@ -44,13 +44,12 @@ CREATE TABLE employee
     );
     
     
-**TenantOne Testing**
+**TenantOne Testing :**
 ```
   curl -X POST \
   http://localhost:8080/employees/create \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
-  -H 'postman-token: 881f0493-f432-dca7-34db-71e25189e58a' \
   -H 'x-tenantid: TenantOne' \
   -d '{
 
@@ -69,13 +68,12 @@ CREATE TABLE employee
   }'
 ```
 
-**TenantTwo Testing**
+**TenantTwo Testing :**
 ```
   curl -X POST \
   http://localhost:8080/employees/create \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
-  -H 'postman-token: 881f0493-f432-dca7-34db-71e25189e58a' \
   -H 'x-tenantid: TenantTwo' \
   -d '{
 
