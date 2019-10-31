@@ -20,12 +20,17 @@ There are several models to achieve multitenancy in an application:
 Every model is a trade-off between isolation and resource sharing.
 
 **create two database**
-
+```
 CREATE database sampledb;
+```
+
+```
 CREATE database sampledb2;
+```
 
 **create table for both database**
 
+```
 CREATE TABLE employee
     (
         id SERIAL PRIMARY KEY,
@@ -42,7 +47,7 @@ CREATE TABLE employee
         ref_id bigint,
         valid bigint
     );
-    
+```   
     
 **TenantOne Testing :**
 ```
