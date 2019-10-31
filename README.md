@@ -14,7 +14,9 @@ There are several models to achieve multitenancy in an application:
 **Think about it**
 
  _1)Database per Tenant_: Every Tenant has its own house.
+ 
  _2)Shared Database, Separate Schema_: Every Tenant in the same building, but has its own apartment.
+ 
  _3)Shared Database, Shared Schema_: Everyone is living in the same apartment and all stuff is marked with sticky-notes to show who owns it.
 
 Every model is a trade-off between isolation and resource sharing.
